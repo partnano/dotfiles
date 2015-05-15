@@ -13,3 +13,6 @@ THESE FILES ARE NOT IN THEIR CORRECT PATHING, THESE ARE MARLY THROWN TOGETHER FO
 
 ### dunstrc
 - The config file for dunst. (You can actually do more with this thing, than I expected, awesome)
+
+### emacs/
+- I really need to re-work this. Except for themes, the nano_config subfolder is unnecessary, the whole config is in '.emacs', since I reverted back to the one-file conig a while ago.
