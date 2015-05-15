@@ -1,0 +1,25 @@
+#!/bin/bash
+
+base=$(amixer -c 1 get Master | grep -E -o '[0-9][0-9][0-9]?%' | head -1)
+
+#echo $base
+
+value=$(echo ${base::-1})
+value=$((value/5))
+
+#echo $value
+
+bar=""
+
+i=0
+while [ $i -lt 20 ]; do
+    if [ $value -gt $i ]
+    then
+	bar+="|"
+    else
+	bar+=":"
+    fi
+    let i=i+1
+done
+
+echo $bar
